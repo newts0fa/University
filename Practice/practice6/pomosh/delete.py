@@ -68,23 +68,23 @@ def delete_files():
             print('Введено неправильное действие!')
         else:
             break
-    podstr = input('Введите подстроку: ')
+    stroka= input('Введите подстроку: ')
     if choice == '1':
-        for i in list(find_files(podstr, type=1).values()):
+        for i in list(find_files(stroka, type=1).values()):
             try:
                 os.remove(i)
                 print(f'Файл {i} удален успешно')
             except PermissionError:
                 print('Недостаточно прав для удаления!')
     elif choice == '2':
-        for i in list(find_files(podstr, type=2).values()):
+        for i in list(find_files(stroka, type=2).values()):
             try:
                 os.remove(i)
                 print(f'Файл {i} удален успешно')
             except PermissionError:
                 print('Недостаточно прав для удаления!')
     elif choice == '3':
-        for i in list(find_files(podstr, type=3).values()):
+        for i in list(find_files(stroka, type=3).values()):
             try:
                 os.remove(i)
                 print(f'Файл {i} удален успешно')
@@ -92,9 +92,9 @@ def delete_files():
                 print('Недостаточно прав для удаления!')
 
     else:
-        if not podstr.startswith('.'):
-            podstr = '.' + podstr
-        for i in list(find_files(podstr, type=0).values()):
+        if not stroka.startswith('.'):
+            stroka = '.' + stroka
+        for i in list(find_files(stroka, type=0).values()):
             try:
                 os.remove(i)
                 print(f'Файл {i} удален успешно')
