@@ -1,6 +1,6 @@
 import random
 
-def load_words(filename):
+def load_words(words.txt):
     """Загрузка слов из файла."""
     try:
         with open('worlds.txt', "r", encoding="utf-8") as file:
