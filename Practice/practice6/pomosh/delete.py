@@ -8,8 +8,8 @@ def return_curr_dir():
 def change_dir():
     while True:
         try:
-            dirc = input('Введите новый путь: ')
-            os.chdir(dirc)
+            num = input('Введите новый путь: ')
+            os.chdir(num)
             print('Путь успешно изменён')
             break
         except (NotADirectoryError, IsADirectoryError, FileNotFoundError, OSError):
