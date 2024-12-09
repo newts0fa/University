@@ -47,7 +47,7 @@ def find_files(*args, type:int=0):
                     file_nums[len(file_nums) + 1] = i
                     print(str(len(file_nums)) + ': ' + i)
     else:
-        print("how did you get here?")
+        print("Для чего вам это?")
     if file_nums == {}:
         if pleas:
             pleas = 0
