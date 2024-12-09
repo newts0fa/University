@@ -24,6 +24,6 @@ while True:
     elif choice == '5':
         print('Goodbye :)')
         exit()
-    else:  # на случай 'невозможного' случая, easter egg так сказать, ignore...
+    else: 
         print("\033[35m{}".format(' ' * 10 + 'Challenge Complete!\n'),
               "\033[0m{}".format(' ' * 9 + 'How Did We Get Here?'))
