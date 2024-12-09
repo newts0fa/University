@@ -25,5 +25,5 @@ while True:
         print('Goodbye :)')
         exit()
     else: 
-        print("\033[35m{}".format(' ' * 10 + 'Challenge Complete!\n'),
-              "\033[0m{}".format(' ' * 9 + 'How Did We Get Here?'))
+        print("\033[35m{}".format(' ' * 10 + 'Всё заблагорассудится!\n'),
+              "\033[0m{}".format(' ' * 9 + 'До скорой встречи!'))
