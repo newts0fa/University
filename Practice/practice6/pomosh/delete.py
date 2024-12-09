@@ -16,9 +16,9 @@ def change_dir():
             print('Неправильно введён путь!')
 
 
-easter_flag_nofiles = 1
+pleas = 1
 def find_files(*args, type:int=0):
-    global easter_flag_nofiles
+    global pleas
     searching_for = tuple([*args])
     file_list = os.listdir(os.getcwd())
     file_nums = {}
@@ -49,8 +49,8 @@ def find_files(*args, type:int=0):
     else:
         print("how did you get here?")
     if file_nums == {}:
-        if easter_flag_nofiles:
-            easter_flag_nofiles = 0
+        if pleas:
+            pleas = 0
             print("\033[33m{}".format('\n'+' ' * 10 + 'Advancement Made!\n'),
                   "\033[0m{}".format(' ' * 9 + 'We Need to Go Deeper\n'))
         print('Файлы не найдены. Попробуйте другой каталог')
