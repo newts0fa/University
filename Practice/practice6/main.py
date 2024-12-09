@@ -12,15 +12,15 @@ while True:
         else:
             break
     if choice == '0':
-        files.change_dir()
+        delete.change_dir()
     elif choice == '1':
-        PDF_docx.pdf_to_docx()
+        pdftodoc.pdf_to_docx()
     elif choice == '2':
-        PDF_docx.docx_to_pdf()
+        pdftodoc.docx_to_pdf()
     elif choice == '3':
-        img_comprs.compress_img()
+        image.compress_img()
     elif choice == '4':
-        files.delete_files()
+        delete.delete_files()
     elif choice == '5':
         print('Goodbye :)')
         exit()
