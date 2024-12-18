@@ -1,5 +1,5 @@
 import random
-from utils import load_words, get_record, save_record
+from allfil import load_words, get_record, save_record
 
 
 def display_word(word, guessed_letters):
